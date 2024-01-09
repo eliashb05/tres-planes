@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: blue;
+        }
+        #planes{
+            border: 2px solid white;
+            height: 80%;
+            display: flex;
+            padding: 20px;
+            justify-content: space-around;
+        }
+        .plan{
+            background-color: white;
+            border-radius: 5px;
+            text-align: center;
+            width: 30%;
+        }
+        h1{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .precio{
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+    
+        }
+        .plan a{ 
+            color: blue;
+            text-decoration: none;
+            border: 2px solid blue;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .plan a:hover{
+            text-decoration: none;
+            border: 2px solid blue;
+            color: white;
+            background-color: blue;
+        }
+        @media (max-width:600px){ /*moviles*/
+           body{
+            background-color: red;
+           } 
+           #planes{
+                display: block;
+                height: auto;
+           }
+           .plan{
+            width: 90%;
+            height: auto;
+            margin: auto;
+            padding-bottom: 10px;
+           }
+        }
+        @media (min-width:601px) and (max-width:720px) { /*tablets*/
+           body{
+            background-color: greenyellow;
+           } 
+           #planes{
+            flex-wrap: wrap;
+            height: auto;
+           }
+           #caja1{
+            width: 90%; 
+            margin-bottom: 20px;
+
+
+           }
+           #caja2,#caja3{
+            width: 40%;
+           }
+           .plan{
+            padding-bottom: 15px;
+           }
+        }
+    </style>
+</head>
+
+<body>
+   
+    <h1>Elija el plan mas adecuado y disfrute de nuestros servicios</h1>
+    <div id="planes">
+        <div class="plan" id="caja1">
+                <h2>Principiantes</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed impedit ipsam fuga temporibus. Porro, aperiam nemo? Numquam, praesentium. Adipisci expedita ipsum nesciunt illum consequatur dicta exercitationem hic delectus nam repellendus?
+                </p>
+                <p class="precio">
+                    1€/mes
+                </p>
+                <a href="#">Elegir</a>
+        </div>
+        <div class="plan" id="caja2">
+                <h2>Basico</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed impedit ipsam fuga temporibus. Porro, aperiam nemo? Numquam, praesentium. Adipisci expedita ipsum nesciunt illum consequatur dicta exercitationem hic delectus nam repellendus?
+                </p>
+                <p class="precio">
+                    10€/mes
+                </p>
+                <a href="#">Elegir</a>
+        </div>
+    <div class="plan" id="caja3">
+                <h2>Profesional</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed impedit ipsam fuga temporibus. Porro, aperiam nemo? Numquam, praesentium. Adipisci expedita ipsum nesciunt illum consequatur dicta exercitationem hic delectus nam repellendus?
+                </p>
+                <p class="precio">
+                    25€/mes
+                </p>
+                <a href="#">Elegir</a>
+        </div>
+    </div>
+</body>
+</html>
